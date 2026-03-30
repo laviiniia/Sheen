@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheen Salão de Beleza - Seu brilho, nossa assinatura</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sheen-orange': '#D46A2C', // Cor principal dos botões/destaques
+                        'sheen-dark': '#3C1F11',   // Marrom escuro do rodapé/texto
+                        'sheen-bg': '#FAF9F6',     // Off-white do fundo
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="antialiased">
+
+    <header class="bg-sheen-bg sticky top-0 z-50 border-b border-gray-100 w-auto h-25">
+        <nav class="flex flex-row px-16 py-6">
+            <img src="./Sheen/img/logo transparente.png" alt="Sheen Logo" class="w-25 h-12">
+            <div class="flex flex-row gap-8">
+                <a href="#sobre" class="hover:text-sheen-orange transition">Sobre</a>
+                <a href="#servicos" class="hover:text-sheen-orange transition">Serviços</a>
+                <a href="#depoimentos" class="hover:text-sheen-orange transition">Depoimentos</a>
+                <a href="#contato" class="hover:text-sheen-orange transition">Contato</a>
+            </div>
+
+            <a href="#"
+                class="bg-sheen-orange text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-opacity-90 transition shadow-md">
+                Agendar
+            </a>
+        </nav>
+    </header>
+
+    <section class="relative bg-sheen-bg overflow-hidden">
+        <div class="container mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+            <div class="z-10 space-y-6 max-w-lg">
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight text-sheen-dark">
+                    Seu brilho, <br>nossa assinatura.
+                </h1>
+                <p class="text-lg text-sheen-dark/70 z-10 font-semibold">
+                    Uma experiência exclusiva de beleza e bem-estar, pensada para realçar o que você tem de mais
+                    especial.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#"
+                        class="bg-sheen-orange text-white px-8 py-3.5 rounded-full text-center font-semibold hover:bg-opacity-90 transition shadow-lg">
+                        Agendar Horário
+                    </a>
+                    <a href="#servicos"
+                        class=" border-2 border-sheen-dark/10 text-sheen-dark px-8 py-3.5 rounded-full text-center font-semibold hover:border-sheen-orange/20 hover:text-sheen-orange transition">
+                        Nossos Serviços
+                    </a>
+                </div>
+            </div>
+
+            <div class="absolute right-0 top-0 bottom-0 w-1/2 h-full">
+                <img src="./Sheen/img/moça.png" alt="Mulher" class="w-full h-full object-cover object-left-top">
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-20 md:py-28 z--10">
+        <!--<div class="w-1/2 h-1 top-0 left-0 rounded-full bg-sheen-dark object-center "></div>-->
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <img src="./Sheen/img/salão.jpg" alt="Interior do Salão Sheen"
+                    class="border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300">
+            </div>
+
+            <div class="space-y-8">
+                <div class="space-y-3">
+                    <span class="text-sheen-orange font-semibold text-sm uppercase tracking-widest">Nossa
+                        Filosofia</span>
+                    <h2 class="text-4xl font-bold text-sheen-dark">Beleza que começa com cuidado.</h2>
+                </div>
+                <div class="space-y-4 text-sheen-dark/70 leading-relaxed">
+                    <p>Beleza que começa com cuidado. Na Sheen, acreditamos que cada pessoa carrega uma beleza singular.
+                        Nosso papel é revelá-la com técnica, atenção e produtos de alta qualidade.</p>
+                    <p>Nosso espaço foi criado para ser um refúgio onde o tempo desacelera e cada detalhe é pensado para
+                        o seu conforto. Da recepção ao resultado final, a experiência é nossa prioridade.</p>
+                </div>
+
+                <div class="flex gap-12 pt-4">
+                    <div class="text-center">
+                        <span class="block text-5xl font-serif font-bold text-sheen-orange">8+</span>
+                        <span class="text-sm text-sheen-dark/60">Anos de<br>experiência</span>
+                    </div>
+                    <div class="text-center">
+                        <span class="block text-5xl font-serif font-bold text-sheen-orange">2.4k</span>
+                        <span class="text-sm text-sheen-dark/60">Clientes<br>satisfeitos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-20 md:py-28 bg-sheen-bg">
+        <div class="p-5 container mx-auto px-6 text-center mb-16 space-y-3">
+            <span class="text-sheen-orange font-semibold text-sm uppercase tracking-widest">Serviços</span>
+            <h2 class="text-4xl font-bold text-sheen-dark">Cuidados pensados para você</h2>
+        </div>
+
+        <div class="container mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="group">
+                <img src="./Sheen/img/cabelo.jpg" alt="Serviço de Cabelo"
+                    class="border border-gray-100 rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300">
+                <h3 class="titulo_cabelo">Cabelo</h3>
+                <p class="texto_cabelo">Corte, coloração, tratamentos e penteados para o seu estilo.</p>
+            </div>
+
+            <div class="group">
+                <img src="./Sheen/img/unhas.jpg" alt="Serviço de Unha"
+                    class="border border-gray-100 rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300">
+                <h3 class="titulo_unha">Unha</h3>
+                <p class="texto_unha">Manicure, pedicure e alongamento com acabamento impecável.</p>
+            </div>
+
+            <div class="group">
+                <img src="./Sheen/img/skincare.jpg" alt="Serviço de Skincare"
+                    class="border border-gray-100 rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300">
+                <h3 class="titulo_skincare">Skincare</h3>
+                <p class="texto_skincare">Tratamentos faciais para uma pele radiante e saudável.</p>
+            </div>
+        </div>
+
+        <!-- <div class="text-center mt-16">
+            <a href="#"
+                class="inline-block border-2 border-sheen-orange/30 text-sheen-orange px-8 py-3 rounded-full font-semibold hover:bg-sheen-orange hover:text-white transition">
+                Ver todos os serviços
+            </a>
+        </div> -->
+    </section>
+
+    <section id="depoimentos" class="py-20 md:py-28 bg-sheen-bg">
+        <div class="container mx-auto px-6 text-center mb-16 space-y-3">
+            <span class="text-sheen-orange font-semibold text-sm uppercase tracking-widest">Depoimentos</span>
+            <h2 class="text-4xl font-bold text-sheen-dark">O que nossas clientes dizem</h2>
+        </div>
+
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <div class="bg-sheen-bg p-8 rounded-3xl space-y-5 border border-gray-100">
+                <div class="flex text-sheen-orange gap-1">
+                    ★★★★★
+                </div>
+                <p class="text-sheen-dark/80 text-sm leading-relaxed">
+                    "O atendimento é impecável! Fiz mechas e o resultado superou minhas expectativas. O cabelo continuou
+                    saudável e com um brilho incrível."
+                </p>
+                <div class="flex items-center gap-3 pt-2">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Mariana Silva"
+                        class="w-10 h-10 rounded-full">
+                    <div>
+                        <p class="font-semibold text-sheen-dark">Mariana Silva</p>
+                        <p class="text-xs text-sheen-dark/60">Cliente há 2 anos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-sheen-bg p-8 rounded-3xl space-y-5 border border-gray-100">
+                <div class="flex text-sheen-orange gap-1">
+                    ★★★★★
+                </div>
+                <p class="text-sheen-dark/80 text-sm leading-relaxed">
+                    "Adoro fazer as unhas aqui. O ambiente é super relaxante e as profissionais são muito caprichosas.
+                    Recomendo de olhos fechados!"
+                </p>
+                <div class="flex items-center gap-3 pt-2">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Beatriz Souza"
+                        class="w-10 h-10 rounded-full">
+                    <div>
+                        <p class="font-semibold text-sheen-dark">Beatriz Souza</p>
+                        <p class="text-xs text-sheen-dark/60">Cliente fiel</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-sheen-bg p-8 rounded-3xl space-y-5 border border-gray-100">
+                <div class="flex text-sheen-orange gap-1">
+                    ★★★★★
+                </div>
+                <p class="text-sheen-dark/80 text-sm leading-relaxed">
+                    "Minha pele mudou da água pro vinho depois dos tratamentos faciais. O cuidado e o conhecimento das
+                    esteticistas são diferenciados."
+                </p>
+                <div class="flex items-center gap-3 pt-2">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Carolina Mendes"
+                        class="w-10 h-10 rounded-full">
+                    <div>
+                        <p class="font-semibold text-sheen-dark">Carolina Mendes</p>
+                        <p class="text-xs text-sheen-dark/60">Cliente recente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-sheen-dark text-white/80 py-16 mt-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 text-sm">
+
+            <div class="space-y-4">
+                <div class="flex items-center gap-2">
+                    <img src="./Sheen/img/logo transparente.png" alt="Sheen Logo" class="h-10 brightness-0 invert">
+                </div>
+                <p>Beleza e cuidado em cada detalhe. Visite-nos e experimente o seu melhor momento.</p>
+            </div>
+
+            <div class="space-y-3">
+                <h4 class="font-semibold text-white uppercase text-xs tracking-wider mb-4">Contato</h4>
+                <p>(11) 99999-9999</p>
+                <p>contato@sheensalao.com.br</p>
+                <p>Rua da Beleza, 123 - São Paulo</p>
+            </div>
+
+            <div class="space-y-3">
+                <h4 class="font-semibold text-white uppercase text-xs tracking-wider mb-4">Horários</h4>
+                <p>Seg - Sex: 09h às 19h</p>
+                <p>Sábado: 09h às 18h</p>
+                <p>Domingo: Fechado</p>
+            </div>
+
+            <div class="space-y-5">
+                <h4 class="font-semibold text-white uppercase text-xs tracking-wider mb-2">Siga-nos</h4>
+                <div class="flex gap-4 text-xl">
+                    <a href="#" class="hover:text-sheen-orange">Ig</a>
+                    <a href="#" class="hover:text-sheen-orange">Fb</a>
+                    <a href="#" class="hover:text-sheen-orange">Tk</a>
+                </div>
+                <a href="#"
+                    class="inline-block bg-sheen-orange text-white px-6 py-2.5 rounded-full text-xs font-semibold hover:bg-opacity-90 transition">
+                    Agendar Agora
+                </a>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 mt-12 pt-8 border-t border-white/10 text-center text-xs text-white/50">
+            © 2024 Sheen Salão de Beleza. Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+
+</html>
